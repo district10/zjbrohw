@@ -96,14 +96,22 @@ three args: Admin, name, income
 XYZ: 77
 
 four args: Admin, name, income, delta
-%%% java -jar target/zjbrohw.jar Admin XYZ 77 12
-XYZ: 89
 %%% java -jar target/zjbrohw.jar Admin XYZ 77 -7
 XYZ: 70
+%%% java -jar target/zjbrohw.jar Admin XYZ 77 12
+XYZ: 89
 %%% java -jar target/zjbrohw.jar Admin XYZ 77 2147483647
 Failure.
 
 more than four args: Admin, [{name, income}], ...
+%%% java -jar target/zjbrohw.jar Admin XYZ 77 kkk -9
+false
+77
+XYZ
+%%% java -jar target/zjbrohw.jar Admin a 1 b 2 a
+false
+3
+a
 %%% java -jar target/zjbrohw.jar Admin a 1 b 2 a 3
 true
 6
@@ -112,8 +120,4 @@ a
 true
 6
 kk
-%%% java -jar target/zjbrohw.jar Admin a 1 b 2 a
-false
-3
-a
 ```
