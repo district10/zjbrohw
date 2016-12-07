@@ -1,4 +1,4 @@
-.PHONY: test
+.PHONY: test clean
 
 all: test
 test: target/zjbrohw.jar
@@ -6,3 +6,6 @@ test: target/zjbrohw.jar
 
 target/zjbrohw.jar: src/main/java/com/tangzhixiong/zjbrohw/Main.java src/main/java/com/tangzhixiong/zjbrohw/Person.java
 	mvn package
+
+clean:
+	rm target -rf
