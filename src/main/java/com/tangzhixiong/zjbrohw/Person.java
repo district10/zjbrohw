@@ -40,7 +40,7 @@ public class Person {
     private int income = 0;
 
     private Person() { }
-    public Person(String name, int income){
+    public Person(String name, int income) {
         if (income < 0) { income = 0; }
         this.name = name;
         this.income = income;
