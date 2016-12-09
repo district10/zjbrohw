@@ -85,10 +85,9 @@ public class Main {
                     duplicate = true;
                 }
             }
-            // ArrayList<Person> persons = new ArrayList<>(Person.persons.values());
-            ArrayList<Person> persons = Person.personsList;
 
-            boolean equalPersons = duplicate; // or `equal_persons(persons)'
+            ArrayList<Person> persons = new ArrayList<>(Person.persons.values());
+            boolean equalPersons = duplicate; // or: boolean equalPersons = equal_persons(Person.personsList);
             int sumIncome = sum_income(persons);
             String longestName = longest_name(persons);
             System.out.println(equalPersons);

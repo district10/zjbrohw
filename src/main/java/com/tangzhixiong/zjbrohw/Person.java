@@ -24,13 +24,13 @@ public class Person {
     }
 
     public static boolean processNameIncomePair(String name, int income) {
+        Person p = new Person(name, income);
+        personsList.add(p); // may dup
         if (persons.containsKey(name)) {
             persons.get(name).changeIncome(income);
             return false; // no new person
         } else {
-            Person p = new Person(name, income);
             persons.put(name, p);
-            personsList.add(p);
             return true; // created a new person
         }
     }
