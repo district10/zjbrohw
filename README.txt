@@ -1,6 +1,6 @@
 ## Usage
 
-All functions are packed into class `Utils`. Usage:
+All functions are packed into class `Admin`. Usage:
 
 ```bash
 make
