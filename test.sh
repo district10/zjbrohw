@@ -1,43 +1,30 @@
 #!/bin/bash
 
-echo No args
-echo %%% java -jar target/zjbrohw.jar
-java -jar target/zjbrohw.jar
+echo %%% java Admin;
+java Admin;
 
 echo
-echo One arg: Admin
-echo %%% java -jar target/zjbrohw.jar Admin;
-java -jar target/zjbrohw.jar Admin;
-echo One arg: not Admin
-echo %%% java -jar target/zjbrohw.jar XXX
-java -jar target/zjbrohw.jar XXX
+echo %%% java Admin XYZ
+java Admin XYZ
 
 echo
-echo two args: Admin, name
-echo %%% java -jar target/zjbrohw.jar Admin XYZ
-java -jar target/zjbrohw.jar Admin XYZ
+echo %%% java Admin XYZ 77
+java Admin XYZ 77
 
 echo
-echo three args: Admin, name, income
-echo %%% java -jar target/zjbrohw.jar Admin XYZ 77
-java -jar target/zjbrohw.jar Admin XYZ 77
+echo %%% java Admin XYZ 77 -7
+java Admin XYZ 77 -7
+echo %%% java Admin XYZ 77 12
+java Admin XYZ 77 12
+echo %%% java Admin XYZ 77 2147483647
+java Admin XYZ 77 2147483647
 
 echo
-echo four args: Admin, name, income, delta
-echo %%% java -jar target/zjbrohw.jar Admin XYZ 77 -7
-java -jar target/zjbrohw.jar Admin XYZ 77 -7
-echo %%% java -jar target/zjbrohw.jar Admin XYZ 77 12
-java -jar target/zjbrohw.jar Admin XYZ 77 12
-echo %%% java -jar target/zjbrohw.jar Admin XYZ 77 2147483647
-java -jar target/zjbrohw.jar Admin XYZ 77 2147483647
-
-echo
-echo more than four args: Admin, [{name, income}], ...
-echo %%% java -jar target/zjbrohw.jar Admin XYZ 77 kkk -9
-java -jar target/zjbrohw.jar Admin XYZ 77 kkk -9
-echo %%% java -jar target/zjbrohw.jar Admin a 1 b 2 a
-java -jar target/zjbrohw.jar Admin a 1 b 2 a
-echo %%% java -jar target/zjbrohw.jar Admin a 1 b 2 a 3
-java -jar target/zjbrohw.jar Admin a 1 b 2 a 3
-echo %%% java -jar target/zjbrohw.jar Admin a 1 b 2 a 3 kk -1
-java -jar target/zjbrohw.jar Admin a 1 b 2 a 3 kk -1
+echo %%% java Admin XYZ 77 kkk -9
+java Admin XYZ 77 kkk -9
+echo %%% java Admin a 1 b 2 a
+java Admin a 1 b 2 a
+echo %%% java Admin a 1 b 2 a 3
+java Admin a 1 b 2 a 3
+echo %%% java Admin a 1 b 2 a 3 kk -1
+java Admin a 1 b 2 a 3 kk -1
