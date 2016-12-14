@@ -4,7 +4,6 @@ import java.util.List;
 
 class Admin {
     public static void main(final String[] args) {
-        Integer i = 5;
         if (args.length == 0) {
             // java Admin
             System.out.println(Person.message);
@@ -26,7 +25,7 @@ class Admin {
             }
         } else {
             // java Admin a 1 b 2 c 3
-            // args[1] ~ args[i]
+            // args[0] ~ args[i]
             ArrayList<Person> persons = new ArrayList<Person>();
             for (int j=0; j+1 < args.length; j+=2) {
                 persons.add( new Person(args[j], Integer.valueOf(args[j+1])) );

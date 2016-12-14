@@ -1,12 +1,14 @@
 ## Usage
 
-All functions are packed into class `Utils`.
+All functions are packed into class `Utils`. Usage:
 
 ```bash
-echo <ARGUMENTS> | java Utils
+make
 ```
 
-see [`test.sh`](test.sh) more details.
+see [`test.sh`](test.sh) for more details.
+
+---
 
 # Specification
 
